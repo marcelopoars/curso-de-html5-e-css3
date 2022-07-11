@@ -1,0 +1,35 @@
+button {
+  background-color: purple;
+  color: #fff;
+  border: 0;
+  padding: 4px 8px;
+  border-radius: 24px;
+}
+
+button:hover:not(:disabled),
+button:focus {
+  background-color: blueviolet;
+  outline: 2px solid blueviolet;
+  outline-offset: 1px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ddd;
+}
+
+button:last-child {
+  margin-left: 8px;
+}
+
+li:first-child {
+  background-color: blueviolet;
+}
+
+li:last-child {
+  background-color: palevioletred;
+}
+
+p:nth-child(2) {
+  background-color: pink;
+}
