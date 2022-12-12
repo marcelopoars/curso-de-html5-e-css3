@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+h1::before {
+    content: '[Aula - 25]';
+    font-size: 16px;
+    color: purple;
+}
+
+h1::after {
+    content: '🚀'; /* display: inline (padrão) */
+    /* display: inline-block; */
+    width: 24px;
+    height: 24px;
+    background-color: purple;
+    border-radius: 50%;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:first-child::after {
+    content: ' ➕';
+}
+
+button:last-child::after {
+    content: ' 💬';
+}
+
+p:first-child::first-line,
+p::first-letter {
+    color: purple;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 24px;
+}
+
+li::marker {
+    content: "🚀 ";
+}
+
+li:last-child::marker {
+    content: '😍 ';
+}
