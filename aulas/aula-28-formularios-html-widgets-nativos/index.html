@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários Html</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Contato</h1>
+
+    <form action="sucesso.html">
+      <div>
+        <label for="userName">Nome</label>
+        <input type="text" id="userName" required name="userName" value="" />
+      </div>
+
+      <div>
+        <label for="userEmail">Email</label>
+        <input type="email" id="userEmail" required name="userEmail"  value="" placeholder="user@email.com" />
+      </div>
+
+      <div>
+        <label for="userPassword">Senha</label>
+        <input type="password" id="userPassword" required name="userPassword" value="" />
+      </div>
+
+      <div>
+        <label for="cep">CEP</label>
+        <input type="search" id="cep" required name="cep" value="" placeholder="99999-999" />
+      </div>
+
+      <div>
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" required name="phone" value="" placeholder="(99) 99999-9999" />
+      </div>
+
+      <div>
+        <label for="message">Mensagem</label>
+        <textarea id="message" required name="message"></textarea>
+      </div>
+
+      <!-- <input type="submit" value="Enviar mensagem 🚀"> -->
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
