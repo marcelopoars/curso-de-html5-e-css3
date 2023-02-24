@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+
+  font-family: sans-serif;
+  color: #222222;
+}
+
+form {
+  max-width: 300px;
+  padding-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input,
+textarea,
+button {
+  border-radius: 4px;
+  padding: 4px 8px;
+
+  font-size: 100%;
+  font-family: inherit;
+  color: inherit;
+}
+
+input,
+textarea {
+  border: 2px solid #dddddd;
+}
+
+button {
+  background-color: purple;
+  color: #ffffff;
+  font-weight: bold;
+
+  border: 2px solid purple;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline-color: purple;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button:hover,
+button:focus {
+  background-color: #ffffff;
+  color: purple;
+}
